@@ -5,7 +5,7 @@ Endless runner voor een vriendengroep, gebouwd voor iPhone (liggend) én desktop
 ## Gouden regels
 
 1. **Alles zit in één bestand: `index.html`** (~8 MB door het ingesloten standaard-muzieknummer). Dit blijft zo — het spel wordt gedeeld via één link. Nooit opsplitsen in losse js/css-bestanden. **Uitzondering:** de extra, vrij te spelen achtergrondnummers staan als losse mp3's in de map `muziek/` (te groot om in te bedden) en worden via de live-link geladen; zie het muziek-onderdeel hieronder.
-2. **Versienummer bumpen bij elke oplevering**: zoek `id="home-version"` (tekst zoals `versie 5.0`) en verhoog hem. Thom checkt dit nummer op zijn iPhone om cache-problemen te herkennen. Huidige versie: **5.0**.
+2. **Versienummer bumpen bij elke oplevering**: zoek `id="home-version"` (tekst zoals `versie 5.1`) en verhoog hem. Thom checkt dit nummer op zijn iPhone om cache-problemen te herkennen. Huidige versie: **5.1**.
 3. **Na elke wijziging testen** (zie Teststrategie). Geen oplevering zonder dat alle zes tests groen zijn.
 4. **Bij grote feature-verzoeken**: stel Thom eerst 2-3 verduidelijkende multiple-choice-vragen, implementeer daarna alles in één keer. Dat is zijn uitdrukkelijke voorkeur.
 5. Na een oplevering: leg in het Nederlands uit wat er veranderd is en wat hij moet testen, en noem het versienummer.

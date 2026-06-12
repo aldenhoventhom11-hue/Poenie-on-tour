@@ -30,5 +30,13 @@ try{
       if(guard>=400){ console.log('FAIL: demo eindigt niet:',key,tp); process.exit(1); }
     });
   });
-  console.log('OK: alle 14 detail-demo\'s spelen volledig af zonder crash');
+  // nieuwe karakters zonder eigen item: alleen de power-demo
+  ['vobaasje','carlos'].forEach(function(key){
+    selectedKey=key;
+    detDemo={type:'sk', t:0};
+    var done=false, guard=0;
+    while(!done && guard<400){ done=drawDetailDemo(mock,190,250,guard); detDemo.t++; guard++; }
+    if(guard>=400){ console.log('FAIL: power-demo eindigt niet:',key); process.exit(1); }
+  });
+  console.log('OK: alle detail-demo\'s (incl. Vo Baasje + Carlos) spelen volledig af zonder crash');
 }catch(e){ console.log('ERROR:',e.message,'\n',e.stack.split('\n').slice(1,5).join('\n')); process.exit(1); }

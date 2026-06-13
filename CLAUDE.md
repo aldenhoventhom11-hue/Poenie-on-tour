@@ -5,7 +5,7 @@ Endless runner voor een vriendengroep, gebouwd voor iPhone (liggend) én desktop
 ## Gouden regels
 
 1. **Alles zit in één bestand: `index.html`** (~8 MB door het ingesloten standaard-muzieknummer). Dit blijft zo — het spel wordt gedeeld via één link. Nooit opsplitsen in losse js/css-bestanden. **Uitzondering:** de extra, vrij te spelen achtergrondnummers staan als losse mp3's in de map `muziek/` (te groot om in te bedden) en worden via de live-link geladen; zie het muziek-onderdeel hieronder.
-2. **Versienummer bumpen bij elke oplevering**: zoek `id="home-version"` (tekst zoals `versie 5.8`) en verhoog hem. Thom checkt dit nummer op zijn iPhone om cache-problemen te herkennen. Huidige versie: **5.8**.
+2. **Versienummer bumpen bij elke oplevering**: zoek `id="home-version"` (tekst zoals `versie 5.9`) en verhoog hem. Thom checkt dit nummer op zijn iPhone om cache-problemen te herkennen. Huidige versie: **5.9**.
 3. **Na elke wijziging testen** (zie Teststrategie). Geen oplevering zonder dat alle zes tests groen zijn.
 4. **Bij grote feature-verzoeken**: stel Thom eerst 2-3 verduidelijkende multiple-choice-vragen, implementeer daarna alles in één keer. Dat is zijn uitdrukkelijke voorkeur.
 5. Na een oplevering: leg in het Nederlands uit wat er veranderd is en wat hij moet testen, en noem het versienummer.
@@ -84,4 +84,4 @@ Eén `<script>` met een IIFE. Belangrijkste onderdelen, grofweg in volgorde:
 
 ## Spelcontext
 
-Zeven speelbare vrienden: julian, olle, timo, daan, jarno, bram, thom. Eindscore = meters + 25×biertjes + 250×chicks. Thoms record: 767. Toon: volwassen vriendengroep-humor (bier, kroeg), cartoonesk — geen expliciete content.
+Speelbare vrienden (15): julian, olle, timo, daan, jarno, bram, thom, harm, annefleur, jack, jopke, smurf, boef, vobaasje, carlos. **Score sinds v5.9**: de getoonde meter = interne afstand / 10 (interne `meters` blijft gelijk, dus zones/oorlogsgebied verschijnen op hetzelfde moment). Eindscore = (meters/10) + 2×biertjes + 25×chicks. Persoonlijke items verschijnen ~elke 250 getoonde meter (= 2500 interne afstand). LET OP: oude leaderboard-scores en het opgeslagen record staan nog in de oude (≈10× grotere) schaal. Toon: volwassen vriendengroep-humor (bier, kroeg), cartoonesk — geen expliciete content.
